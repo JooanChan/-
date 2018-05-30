@@ -1,0 +1,60 @@
+span{
+	color:#f40;
+	border-bottom:1px solid #000000;
+	/**bb*/
+		}
+ul{
+	list-style: none;
+	/* lsn 去小圆点*/
+}
+li{
+	float:left;
+	padding:5px;
+	margin:0 10px;
+	font-weight:bold;
+	text-align:center;
+/*文本居中*/		}
+ul li:hover{
+cursor:pointer;
+background:red;
+color:white;
+border-radius:50%;
+}
+input[type=text],[type=password]{
+	display:inline-block;
+	width: 185px;
+	height: 30px;
+	padding-left:15px;
+	font-size:18px;
+	margin-bottom:15px;
+	border-radius:2px;
+	outline-style:none;
+	color:#f40;
+	border:1px solid #DDDDDD;
+}
+textarea{outline-style:none;
+}
+button{
+	width:130px;
+	height: 30px;
+	border-radius: 6px;
+	margin-left:20px;
+	text-align:center;
+	cursor: pointer;
+
+}
+input[type=radio],form>input+label{
+	cursor:pointer;
+}
+
+table{
+	text-align:center;
+	width: 430px;
+	height: 150px;
+	font-size:12px;
+	margin:30px auto;
+}
+table>caption{
+	font-size:20px;
+	font-weight: bold;
+}

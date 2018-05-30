@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*初始化样式*/
+	*{
+		padding:0;
+		margin:0;
+	}
+	/*header start*/
+	.header{
+	background: pink;
+	height:100px;
+	width: 100%;
+	}
+	.header .logo{
+	float:left;
+	background: red;
+	width: 30%;
+	height: 100px;
+	}
+	.header .nav{
+	float: left;
+	background: green;
+	width: 40%;
+	height: 30px;
+	}
+	.header .login{
+	float:left;
+	background: yellow;
+	height: 30px;
+	width: 30%;
+	}
+	/*content start*/
+	.content{
+	background:#f40;
+	width: 100%;
+	height: 300px;
+	}
+	.content .aside{
+	float:left;
+	background: pink;
+	width: 30%;
+	height: 100%;
+	}
+
+	/*content end*/
+	/*footer start*/
+	.footer{
+	width: 100%;
+	height: 85px;
+	background: #ccc;
+	}
+	/*footer end*/
+
+	</style>
+</head>
+<body>
+<!-- .header(>.logo+.nav+.login)+.content(>.aside+.section(>.top(>.left(>.wraper1+.wraper2)+.right)+.bottom))+.footer(>p) -->
+<!-- header  start-->
+	<div class="header">
+		<div class="logo"></div>
+		<div class="nav"></div>
+		<div class="login"></div>
+	</div>
+<!-- header  end-->
+
+
+<!-- content  start-->
+
+	<div class="content">
+		<div class="aside"></div>
+		<div class="section">
+			<div class="top">
+				<div class="left">
+					<div class="wrapper1"></div>
+					<div class="wrapper2"></div>
+				</div>
+				<div class="right"></div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+<!-- content  start-->
+
+<!-- footer  start-->
+	<div class="footer"><p></p></div>
+<!-- header  end-->
+
+</body>
+</html>

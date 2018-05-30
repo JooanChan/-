@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		/*.clear{
+			clear:both;
+/*不常用*/
+		}*/
+		.div1{
+			height: 100px;
+			width: 400px;
+			border:1px solid #ccc;
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			float: left;
+			border: 1px solid #000;
+			border:1px solid #ccc;
+		}
+		.div1::after{
+		content:'';
+		display: block;
+		clear: both;/*/*只对块级元素有用*//*产生的浮动流对后续代码产生影响，所以要在浮动结束设置一个clear:both;*/
+		}
+		/*.div1{
+		overflow:hidden}*/
+	</style>
+</head>
+<body>
+<div class="div1">
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<!-- 第一个div1的浮动不会对第二个进行影响 -->
+<div class="div1">
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+</body>
+</html>

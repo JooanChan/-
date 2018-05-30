@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rem等比例缩放</title>
+	<meta <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 屏幕宽度等于设备宽度 -->
+	<style type="text/css">
+	*{
+		font-size: 20px;
+	}
+	.container{
+		margin:0 auto;
+		max-width:40rem; /*800px;*/
+		border: .05px solid #000;
+	}
+	.intro{
+		display: inline-block;
+		width: 9rem;/*180px;*/
+		height:9rem;
+		line-height: 9rem;
+		text-align: center;
+		border-radius: 4.5rem;
+		border: .05px solid red;
+		margin: .35rem;
+	}
+	@media(max-width: 375px){
+		.intro{
+			font-size: 24px;
+		}
+	}
+	@media(max-width: 320px){
+		.intro{
+			font-size: 20px;
+		}
+	}
+	@media(max-width: 760px){
+		.intro{
+			margin:.35rem auto;
+			display: block;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="intro">介绍1</div>
+		<div class="intro">介绍2</div>
+		<div class="intro">介绍3</div>
+		<div class="intro">介绍4</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0 ;
+			padding:0;
+			font-size: 12px;
+
+		}
+		.div1{
+			width: 100px;
+			height: 100px;
+			background: #00f;/*深蓝*/
+			margin-left:50px;
+			margin-top: 30px;
+			position: relative;
+		}
+		.div2{
+			width: 50px;
+			height: 50px;
+			background: #f0f;/*紫色*/
+			position: absolute;
+			 /*poa*/
+			 top:0;
+			 left: 25px;
+		}
+		/*position 子绝父相
+
+			relative不脱离文档流的，相对于原本的位置
+ 				top left 像素，百分比表示
+ 				代码紧挨在一起
+
+			 absolute脱离标准文档流，相对于整个body进行定位*/
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2"></div>
+	</div>
+</body>
+</html>

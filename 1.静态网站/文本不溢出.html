@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本不溢出</title>
+	<style type="text/css">
+		p{
+			width: 400px;
+			height: 40px;
+			line-height: 40px;
+			border: 1px solid #000;
+			font-size: 20px;
+			font-weight: bold;
+			/*wsnw*/
+			white-space: nowrap;
+			/*强制在同一行内显示所有文本，直到文本结束或者遭遇br对象*/
+			/*ofh*/
+			overflow: hidden;
+			/*toe*/
+			-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			/* 当对象内文本溢出时显示省略标记（...）。*/
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+</body>
+</html>

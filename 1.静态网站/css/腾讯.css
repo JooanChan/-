@@ -1,0 +1,305 @@
+.header{
+	width: 100%;
+	height: 730px;
+	background:url(../images/bg.jpg)  no-repeat;
+}
+.w{
+	width: 1250px;
+	margin:0 auto;
+}
+.header .header-top {
+	padding-top: 10px;
+}
+.header .header-top  .header-logo{
+	float: left;
+}
+.header .header-top .header-logo a {
+	font-size: 18px;
+}
+.header .header-top .site-channel{
+float: left;
+}
+.header .header-top .site-channel .channel_title{
+	float: left;
+	font-size: 20px;
+	margin:10px 15px;
+}
+.header .header-top .site-channel .channel_area{
+	float: left;
+	font-size: 14px;
+}
+.header .header-top .site-channel .channel_area span{
+	display: inline-block;
+	margin: 16px 15px;
+}
+.header .header-top .search-keywords{
+	float: left;
+}
+.header .header-top .search-keywords input{
+	width: 460px;
+	height: 40px;
+	border: 1px solid #F0F2F5;
+	background: #F0F2F5;
+	opacity: .6;
+	border-radius:20px 0 0 20px;
+	padding-left: 20px;
+}
+.header .header-top .search-keywords button{
+	position: relative;
+	top: 3px;
+	left:-4px;
+	width: 110px;
+	height: 42px;
+	background: #FF6428;
+	border: 1px solid #FF6428;
+	color: white;
+	font-size: 20px;
+	border-radius: 0 20px 20px 0;
+}
+
+.header .header-top  .mod-qhick{
+	float: right;
+	margin:10px 30px 0 0;
+}
+
+.header .header-top  .mod-qhick span{
+	float: left;/*浮动*/
+	color: #666;
+	font-size: 12px;
+	margin:10px;
+	cursor: pointer;
+}
+/*情除浮动*/
+.header .header-top::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*.header-top end*/
+
+/*header-bottom start*/
+.header .header-bottom{
+
+}
+.header .header-bottom .nav-area{
+	width: 1240px;
+	height: 28px;
+	border-radius: 14px;
+	line-height: 28px;
+	background: pink;
+	opacity: .6;
+}
+.header .header-bottom .nav-area .nav-list{
+	font-size: 14px;
+	color: #000;
+	margin-left: 20px;
+}
+.header .header-bottom .nav-area .nav-list a{
+	color: #000;
+}
+.header .header-bottom .nav-area .nav-list a:hover{
+	color: #FF6428;
+}
+.header .header-bottom .nav-area div{
+	float: left;/*浮动*/
+	font-size: 14px;
+	margin-left: 20px;
+}
+.header .header-bottom .nav-area div a{
+	color: #000;
+}
+.header .header-bottom .nav-area div a:hover{
+	color: #FF6428;
+}
+.header .header-bottom .nav-area div.left{
+	position: relative;
+	top:8px;
+	height: 13px;
+	border-left:1px solid #000;
+}
+.header .header-bottom .nav-area .nav-list a{
+	float: left;/*浮动*/
+	margin:0 8px;
+}
+/*情除浮动*/
+.header .header-bottom .nav-area::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.header .header-bottom .nav-area .nav-list::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*side-nav start*/
+.side-nav{
+	position: relative;
+	top: 40px;
+	left: 970px;
+	height: 310px;
+	width: 238px;
+	background: white;
+	opacity: .9;
+	font-size: 14px;
+}
+.side-nav a{
+	display: block;
+	padding:5px 10px;
+}
+.side-nav a:hover{
+	text-decoration: none;
+	background: #FF6428;
+	color: white;
+	opacity: 1;
+}
+/*hidden-area start*/
+.hidden-area{
+	position: relative;
+	top: 20px;
+	left: 0;
+	margin: 36px auto 0;
+	padding:16px  0 0 28px;
+	width: 1220px;
+	height: 240px;
+	background: white;
+	opacity: .9;
+
+}
+.hidden-area>p{
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.hidden-area .box{
+	float: left;
+	margin-right: 52px;
+}
+.hidden-area .box p{
+	text-align: center;
+}
+.hidden-area .box p.p1{
+	font-size: 14px;
+	font-weight: bold;
+}
+.hidden-area .box p.p2{
+	font-size: 12px;
+}
+.hidden-area .box div.round{
+	width: 94px;
+	height: 94px;
+	border-radius: 50%;
+	border: 3px solid white;
+	
+}
+.hidden-area div.round:hover{
+	border: 3px solid #FF6428;
+}
+.hidden-area::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+
+
+/*content start */
+.content{
+	width: 100%;
+	height: 2220px;
+	/*background: green;*/
+}
+.content .content-inner>p{
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.content .content-inner a{
+	float: left;
+	display: block;
+	width: 188px;
+	height: 340px;
+	margin-right: 20px;
+}
+.content .content-inner a  .tv{
+	width: 187px;
+	height: 260px;
+	border: 1px solid #ccc;
+}
+.content .content-inner a  .tv span{
+	position: relative;
+	bottom: -240px;
+	left: 10px;
+	color:#FFFFFF;
+	font-weight: bold;
+	font-size: 13px;
+}
+.content .content-inner a:hover{
+	text-decoration: none;
+}
+.content .content-inner a .p3{
+	margin-top: 4px;
+	font-weight: bold;
+	color: #000;
+}
+.content .content-inner a .p3:hover{
+	color:#FF6428;
+}
+.content .content-inner a .p4{
+	margin-top: 4px;
+	color: #000;
+}
+/*footer start*/
+.footer{
+	width: 100%;
+	height: 300px;
+	/*background: red;*/
+	border-top: 2px solid #FF6428;
+}
+.footer .hot-channel{
+	width: 240px;
+	height: 100%;
+	margin:40px 0 0 10px;
+
+}
+.footer em{
+	font-weight: bold;
+	font-size: 18px;
+
+}
+.footer .footer-nav .hot-channel{
+	float: left;/*浮动*/
+	margin-right: 34px;
+}
+.footer  .footer-nav .hot-channel ul{
+	margin-top: 20px;
+}
+.footer  .footer-nav .hot-channel ul li {
+	float: left;/*浮动*/
+	width: 70px;
+	height: 18px;
+	/*background: pink;*/
+	margin:5px 0;
+}
+.footer .footer-nav::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.footer  .footer-nav .hot-channel ul::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+.footer .about-tencent{
+	margin-top:40px;
+	margin-bottom: 20px;
+}
+.footer .about-tencent p{
+	text-align: center;
+	cursor: pointer;
+	color: #999;
+}
+
