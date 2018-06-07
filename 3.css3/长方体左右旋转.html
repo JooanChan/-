@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ZN-ch">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		div{
+			perspective: 500px;
+			width: 400px;
+			height: 400px;
+			margin: 150px auto;
+			/*border: 1px solid #000;*/
+		}
+		ul{
+			width: 400px;
+			height: 200px;
+			background: #f40;
+			position: relative;
+			transform-style: preserve-3d;
+			/*显示3d*/
+			/*transform: rotateX(30deg)
+			rotateY(60deg);*/
+			list-style: none;
+			text-align: center;
+			animation:move 5s linear 0s infinite;
+
+		}
+		ul>li{
+			width: 400px;
+			height: 200px;
+			background: pink;
+			position: absolute;
+			top:0px;
+			left: 0px;
+			line-height: 200px;
+			font-size: 20px;
+			font-weight: bold;
+			
+		}
+		@keyframes move{
+			from{
+				transform: rotateY(0deg);
+			}
+			to{
+				transform: rotateY(360deg);
+			}
+		}
+
+		li:nth-child(1){
+			background: grey;
+			transform:  rotateX(90deg) translateZ(100px);
+		}
+
+		li:nth-child(2){
+			background: pink;
+			transform:rotateY(180deg) translateZ(100px);
+		}
+		li:nth-child(3){
+			background: blue;
+			transform: rotateX(270deg) translateZ(100px);
+
+		}
+		li:nth-child(4){
+			background: yellow;
+			transform: rotateX(360deg) translateZ(100px)
+
+		}
+		li:nth-child(5){
+			width: 200px;
+			height: 200px;
+			background: skyblue;
+			transform: rotateY(90deg) translateZ(300px);
+
+		}
+		li:nth-child(6){
+			background: red;
+			width: 200px;
+			height: 200px;
+			transform: rotateY(-90deg) translateZ(100px);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</div>
+</body>
+</html>

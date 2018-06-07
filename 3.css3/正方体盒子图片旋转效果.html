@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ZN-ch">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		div{
+			perspective: 500px;
+			width: 400px;
+			height: 400px;
+			margin: 150px auto;
+			/*border: 1px solid #000;*/
+		}
+		ul{
+			width: 200px;
+			height: 200px;
+			background: #f40;
+			position: relative;
+			transform-style: preserve-3d;
+			/*显示3d*/
+			/*transform: rotateX(30deg)
+			rotateY(60deg);  */  /* 为了刚开始看出空间感  */
+			list-style: none;
+			animation:move 3s linear infinite;
+		}
+		ul>li{
+			position: absolute;
+			top:0px;
+			left: 0px;
+			width: 200px;
+			height: 200px;
+			line-height: 200px;
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+			background: pink;
+			/*animation:move 3s linear infinite;   容易搞错，不是放在li而是在ul中*/
+		}
+		@keyframes move{
+			from{
+				transform: rotateX(0deg);
+			}
+			to{
+				transform: rotateX(360deg);
+			}
+		}
+
+		li:nth-child(1){
+			background: grey;
+			transform:  rotateX(90deg) translateZ(100px);
+		}
+
+		li:nth-child(2){
+			background: pink;
+			transform: rotateX(180deg) translateZ(100px);
+		}
+		li:nth-child(3){
+			background: blue;
+			transform: rotateX(270deg) translateZ(100px);
+
+		}
+		li:nth-child(4){
+			background: yellow;
+			transform: rotateX(360deg) translateZ(100px)
+
+		}
+		li:nth-child(5){
+			background: skyblue;
+			transform: rotateY(90deg) translateZ(100px);
+
+		}
+		li:nth-child(6){
+			background: red;
+			transform: rotateY(270deg) translateZ(100px);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</div>
+</body>
+</html>

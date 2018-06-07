@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D旋转</title>
+	<style type="text/css">
+		*{
+		margin:0;
+		padding:0;
+		}
+		ul {
+			width: 200px;
+			height: 200px;
+			border: 2px solid #000;
+			margin : 50px auto;
+			position: relative;
+			list-style: none;
+		}
+		li{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left:0px;
+			top:0px;
+			background: pink;
+			font-size: 20px;
+			text-align: center;
+			line-height: 200px;
+			/*tr-o*/
+			transform-origin: 200px 200px;
+			/*旋转中心点的位置
+			*围绕z轴
+			*/
+		}
+		li:nth-child(1){
+			background: blue;
+			transform: rotate(45deg);
+			/*正数为顺时针，负数为逆时针*/
+		}
+		li:nth-child(2){
+			background: green;
+			transform: rotate(60deg);
+		}
+		li:nth-child(3){
+			background: yellow;
+			transform: rotate(-80deg);
+		}
+		li:nth-child(4){
+			background: pink;
+			transform: rotate(-135deg);
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+</html>

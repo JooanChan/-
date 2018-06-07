@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding:0;
+}
+.w{
+	width: 980px;
+	margin: 0 auto;
+	background: blue;
+
+}
+.topbar{
+	width: 100%;
+	height: 105px;
+	background: yellow;
+}
+.topbar .top{
+	width: 100%;
+	height: 70px;
+	background: red;
+}
+.topbar .nav{
+	width: 100%;
+	height: 35px;
+	background: green;
+}
+
+.content{
+	width: 100%;
+	height: 2335px;
+	background: #F5F5F5;
+}
+.content .carousel{
+	width: 100%;
+	height: 335px;
+	background: skyblue;
+
+}
+.content .content-text .content-left{
+	width: 729px;
+	height: 2000px;
+	background: purple;
+	float: left;
+}
+.content .content-text .content-right{
+	width: 251px;
+	height: 2000px;
+	background: #f40;
+	float: left;
+}
+.content .content-text::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+
+
+.footer{
+	width: 100%;
+	height: 300px;
+	background: pink;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片倒下效果</title>
+	<style type="text/css">
+	*{
+		margin: 0 ;
+		padding:0;
+	}
+		div{
+			width: 150px;
+			height: 200px;
+			/*background: pink;*/
+			margin: 150px auto;
+			border: 1px solid #000;
+			perspective: 500px;
+			/*透视*/
+		}
+		div:hover img{
+			transform: rotateX(80deg);
+			/*transition: all 3s; */
+			/*不放在这里*/
+		}
+		img{
+			height: 200px;
+			transform-origin: 75px 200px;
+			/*
+			*即
+			 *transform-origin: 50% 100%;
+			 */
+			transition: all 3s;   /*
+									*在一定的时间区间内平滑的过渡
+									*不设置的话会非常的生硬
+																*/
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="images/2.jpg">
+	</div>
+</body>
+</html>

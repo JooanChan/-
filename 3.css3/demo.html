@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;padding:0;
+	}
+	/*div{
+		width: 620px;
+		height: 280px;
+		margin:0 auto;
+		border: 1px solid #cccccc;
+		overflow: hidden;
+	}*/
+	ul{
+		width: 1560px;
+		height: 280px;
+		margin:0 auto;
+		border: 1px solid #cccccc;
+		overflow: hidden;
+		list-style: none;
+	}
+	ul li {
+		float: left;
+		width: 312px;
+		height: 280px;
+		transition: all 1s linear .3s;
+		/*transition:属性 运动时间 运动方式 延迟时间;*/
+	} 
+	ul:hover li{
+		width: 262px;
+		/*宽度变小*/
+	}
+	ul li img{
+		height: 280px;
+		transition: width 5s linear 1s;
+	}
+	ul li:hover{
+		width: 520px;
+		height: 280px;
+	}
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="images/11.jpg" alt=""></li>
+		<li><img src="images/22.jpg" alt=""></li>
+		<li><img src="images/33.jpg" alt=""></li>
+		<li><img src="images/44.jpg" alt=""></li>
+		<li><img src="images/55.jpg" alt=""></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D复合选择器</title>
+	<style type="text/css">
+	p{
+		width: 50px;
+		height: 50px;
+		background: pink;
+		border: 1px solid #000;
+	}
+		p:nth-child(1){/*第一个p*/
+			-webkit-transform: rotateY(45deg);
+			-ms-transform: rotateY(45deg);
+			-o-transform: rotateY(45deg);
+			transform: rotateY(45deg);
+			/*在Y轴上完成的旋转*/
+		}
+		p:nth-child(2){
+			-webkit-transform: rotateX(45deg);
+			-ms-transform: rotateX(45deg);
+			-o-transform: rotateX(45deg);
+			transform: rotateX(45deg);
+			/*x轴旋转45deg,不能用px*/
+		}
+		p:nth-child(3){
+			-webkit-transform: translateX(200px);
+			-ms-transform: translateX(200px);
+			-o-transform: translateX(200px);
+			transform: translateX(200px);
+			/*在Y轴上平移了200px*/
+			/*
+			
+			 *transform：translate(100px,0px)
+			 *x轴和y轴
+			*/
+		}
+		p:nth-child(4){
+			transform: scale(2,1) translate(200px,0px) rotateX(45deg);
+			/*width: 两倍，height：一倍*/
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<p>Y轴旋转</p>
+		<p>X轴旋转</p>
+		<p>x轴平移</p>
+		<p>scale(2,1)</p>
+		<p></p>
+		<p></p>
+		<p></p>
+	</div>
+</body>
+</html>

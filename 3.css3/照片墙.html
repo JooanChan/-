@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding:0;
+	}
+		ul{
+			list-style: none;
+			width: 1000px;
+			height: 320px;
+			margin: 100px auto;
+			border: 2px solid #000;
+			background: skyblue;
+			padding:70px 0 0 134px;
+			box-sizing: border-box;
+		}
+		ul li {
+			float: left;
+			margin-left:40px;
+			position: relative;/*por与li:hover处的z-index连用才生效;*/
+			transition: all 1s ;
+			/*border: 2px solid #cccccc;*/
+		}
+		ul li img{
+			height: 150px;
+			/*width: 100px;
+			overflow: hidden;*/
+			border: 2px solid #000;
+			/*box-shadow: 0 0 10px;*/
+		}
+		ul li:nth-child(1){
+			transform: rotate(45deg);/*顺时针*/
+		}
+		ul li:nth-child(2){
+			transform: rotate(315deg);/*顺时针*/
+		}
+		ul li:nth-child(3){
+			transform:rotate(-50deg);/*逆时针*/
+			/*z-index:999;*/
+			/*position:relative;
+			top:30px;
+			left: 2px;*/
+		}
+		ul li:nth-child(4){
+			transform: rotate(45deg);
+		}
+		ul li:hover{
+			transform: none;
+			/*transform: scale(1.5,1.5);*/
+			transform: scale(1.5);
+			z-index: 999; /*por与li:hover处的z-index连用才生效;*/
+			/*top:0;
+			left:0;*/
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="images/1.jpg" alt=""></li>
+		<li><img src="images/2.jpg" alt=""></li>
+		<li><img src="images/3.jpg" alt=""></li>
+		<li><img src="images/4.jpg" alt=""></li>
+		<!-- <li><img src="images/5.jpg" alt=""></li> -->
+	</ul>
+</body>
+</html>
