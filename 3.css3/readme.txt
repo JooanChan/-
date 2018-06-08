@@ -108,3 +108,14 @@ cover等比拉伸(常用)
 
 弹性布局
 
+
+img间距8px
+display:inline-block:间距8px
+不常用
+box-sizing:border-box/content-box(默认);
+calc(公式)
+
+
+win + T
+
+

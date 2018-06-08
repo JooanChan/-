@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+		div{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 400px;
+			height: 600px;
+			border: 3px solid #000;
+			background: red;
+			margin: 100px auto;
+		}
+		p{
+			box-sizing: border-box;
+			width: 100px;
+			/*width:calc(100px - 2px);/*加空格 否则不生效 不常用*/
+			height: 100px;
+			background: pink;
+			border: 1px solid #000;
+			float: left;
+			line-height: 100px;
+			text-align: center;
+			font-size: 20px;	
+		}
+		.p1{
+			flex:6;
+		}
+		.p2{
+			flex:3;
+		}
+		/*数值按比例来*/
+		/*.p3{
+			flex:1;
+		}*/
+		/*.p4{
+			flex:1;
+		}*/
+	</style>
+</head>
+<body>
+	<div>
+		<p class="p1">1</p>
+		<p class="p2">2</p>
+		<!-- <p class="p3">3</p> -->
+		<!-- <p clas2s="p4">4</p> -->
+	</div>
+</body>
+</html>
